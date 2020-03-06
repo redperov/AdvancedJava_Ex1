@@ -88,9 +88,10 @@ public class DeckOfCards {
                 stringBuilder.append("\n");
             }
             else {
-                stringBuilder.append(", ");
+                stringBuilder.append(",");
             }
         }
+        stringBuilder.setLength(stringBuilder.length() - 1);
 
         return stringBuilder.toString();
     }

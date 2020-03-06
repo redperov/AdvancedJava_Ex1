@@ -15,6 +15,6 @@ public class Card {
     @Override
     public String toString() {
         return String.format("%s of %s", this.face.name(),
-                this.suit.name());
+                this.suit.name().toLowerCase());
     }
 }
