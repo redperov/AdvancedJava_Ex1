@@ -1,3 +1,6 @@
+/**
+ * Represents a single card in a deck.
+ */
 public class Card {
 
     private final CardFacesEnum face;

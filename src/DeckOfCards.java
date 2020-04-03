@@ -2,18 +2,43 @@ import java.security.SecureRandom;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Represents a deck of cards.
+ */
 public class DeckOfCards {
 
+    /**
+     * Max number of cards in the deck.
+     */
     private static final int NUM_OF_CARDS = 52;
+
+    /**
+     * Generates random numbers.
+     */
     private static final SecureRandom randomGenerator = new SecureRandom();
+
+    /**
+     * All the possible card faces.
+     */
     private static final CardFacesEnum[] faces = {CardFacesEnum.ACE, CardFacesEnum.DEUCE,
             CardFacesEnum.THREE, CardFacesEnum.FOUR, CardFacesEnum.FIVE, CardFacesEnum.SIX,
             CardFacesEnum.SEVEN, CardFacesEnum.EIGHT, CardFacesEnum.NINE, CardFacesEnum.TEN,
             CardFacesEnum.JACK, CardFacesEnum.QUEEN, CardFacesEnum.KING};
+
+    /**
+     * All the possible card suits.
+     */
     private static final CardSuitsEnum[] suits = {CardSuitsEnum.HEARTS, CardSuitsEnum.DIAMONDS,
             CardSuitsEnum.CLUBS, CardSuitsEnum.SPADES};
 
+    /**
+     * Holds all the current deck's cards.
+     */
     private List<Card> deck;
+
+    /**
+     * The index of the current card that's being used in the deck.
+     */
     private int currentCard;
 
     /**
